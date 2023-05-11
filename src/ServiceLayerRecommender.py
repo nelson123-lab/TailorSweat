@@ -60,8 +60,9 @@ class RecommenderLayer:
         return new_data
 
 
-    def wrangle_data(self, exercise_derived, workout_dervied, user, exercise_metadata, workout_table):
-
+    def wrangle_data(self, exercise_derived, workout_dervied, user, exercise_metadata, workout_table, exercise_table):
+        new_data = self.data_preprocessing(workout_table, exercise_table)
+        
         pass
 
     def recompute_exercises_weights(self):
